@@ -1,0 +1,6 @@
+{
+  "name": "Michael Mukaira A - Portfolio",
+  "description": "A sleek, modern, and interactive ePortfolio for Michael Mukaira A.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
