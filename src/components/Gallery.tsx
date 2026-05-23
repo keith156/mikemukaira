@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 const galleryItems = [
   {
     id: 1,
-    src: 'https://images.unsplash.com/photo-1545638167-333eec1823eb?auto=format&fit=crop&q=80&w=800&h=1000',
+    src: 'https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&q=80&w=800&h=1000',
     caption: 'MARIYAM HERITAGE — 7-STOREY BLOCK',
   },
   {
@@ -18,12 +18,12 @@ const galleryItems = [
   },
   {
     id: 4,
-    src: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=800&h=1400',
+    src: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800&h=1400',
     caption: 'ESTATE LAYOUT — 12 PLOTS COORDINATED',
   },
   {
     id: 5,
-    src: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800&h=1000',
+    src: 'https://images.unsplash.com/photo-1497211419994-14ae4022a16d?auto=format&fit=crop&q=80&w=800&h=1000',
     caption: 'MULTI-SCREEN DRAWING PRODUCTION',
   },
   {
@@ -35,8 +35,8 @@ const galleryItems = [
 
 export function Gallery() {
   return (
-    <section id="gallery" className="py-32 relative bg-white/[0.01]">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+    <section id="gallery" className="py-12 md:py-16 relative bg-white/[0.01]">
+      <div className="max-w-7xl mx-auto px-4 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ export function Gallery() {
           </p>
         </motion.div>
 
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
+        <div className="columns-2 lg:columns-3 gap-3 md:gap-6">
           {galleryItems.map((item, index) => (
             <motion.div
               key={item.id}
@@ -62,7 +62,7 @@ export function Gallery() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-100px' }}
               transition={{ duration: 0.6, delay: (index % 3) * 0.1 }}
-              className="relative rounded-2xl overflow-hidden group break-inside-avoid shadow-lg mb-6"
+              className="relative rounded-xl md:rounded-2xl overflow-hidden group break-inside-avoid shadow-lg mb-3 md:mb-6"
             >
               <img
                 src={item.src}
@@ -71,8 +71,8 @@ export function Gallery() {
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 flex items-end">
-                <p className="text-white text-sm font-bold tracking-widest uppercase leading-snug drop-shadow-md">
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 flex items-end">
+                <p className="text-white text-xs sm:text-sm font-bold tracking-widest uppercase leading-snug drop-shadow-md">
                   {item.caption}
                 </p>
               </div>

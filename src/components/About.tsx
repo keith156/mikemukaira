@@ -10,7 +10,7 @@ const coreRoles = [
 
 export function About() {
   return (
-    <section id="about" className="py-32 relative">
+    <section id="about" className="py-12 md:py-16 relative">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-white/[0.03] to-transparent pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">

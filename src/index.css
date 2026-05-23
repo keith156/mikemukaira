@@ -3,7 +3,7 @@
 
 @theme {
   --color-primary: #e87032;
-  --color-background: #0a0a0a;
+  --color-background: #000000;
   --color-foreground: #fafafa;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;

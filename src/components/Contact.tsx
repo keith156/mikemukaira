@@ -3,7 +3,7 @@ import { Mail, ArrowRight } from 'lucide-react';
 
 export function Contact() {
   return (
-    <section id="contact" className="py-32 relative overflow-hidden">
+    <section id="contact" className="py-12 md:py-16 relative overflow-hidden">
       {/* Background radial gradient */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20">
         <div className="w-[600px] h-[600px] bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl"></div>

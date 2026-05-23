@@ -30,7 +30,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-32 bg-white/[0.01] border-y border-white/5 relative">
+    <section id="projects" className="py-12 md:py-16 bg-white/[0.01] border-y border-white/5 relative">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <motion.div

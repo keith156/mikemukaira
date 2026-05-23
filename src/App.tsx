@@ -5,6 +5,7 @@
 
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { Marquee } from './components/Marquee';
 import { About } from './components/About';
 import { Projects } from './components/Projects';
 import { Gallery } from './components/Gallery';
@@ -14,10 +15,11 @@ import { Footer } from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-background text-foreground antialiased selection:bg-primary/30">
+    <div className="min-h-screen bg-background text-foreground antialiased selection:bg-primary/30 overflow-x-hidden">
       <Navbar />
       <main>
         <Hero />
+        <Marquee />
         <About />
         <Projects />
         <Gallery />
